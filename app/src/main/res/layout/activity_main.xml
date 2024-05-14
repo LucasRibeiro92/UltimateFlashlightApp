@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/background_anm"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        tools:ignore="MissingConstraints"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_toogle"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:lottie_rawRes="@raw/toogle_anm"
+        app:lottie_loop="false"
+        app:lottie_autoPlay="false"
+        tools:ignore="MissingConstraints"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_main"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        app:lottie_rawRes="@raw/walking_anm"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/animation_toogle"/>
+
+
+
+</RelativeLayout>
