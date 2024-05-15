@@ -20,7 +20,7 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_toogle"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         app:lottie_rawRes="@raw/toogle_anm"
         app:lottie_loop="false"
         app:lottie_autoPlay="false"
@@ -36,6 +36,7 @@
         tools:ignore="MissingConstraints"
         android:layout_alignParentBottom="true"
         android:layout_below="@id/animation_toogle"/>
+
 
 
 
